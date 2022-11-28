@@ -101,68 +101,8 @@ if __name__ == "__main__":
 ```
 # API Reference
 
-#### Turtle3D.begin_fill() -> None
-points to turtle.begin_fill()
-
-
-#### Turtle3D.end_fill() -> None
-points to turtle.end_fill()
-
-
-#### Turtle3D.filling() -> bool
-points to turtle.filling()
-
-
-#### Turtle3D.ht() -> None
-#### Turtle3D.hideturtle() -> None
-points to turtle.hideturtle()
-
-
-#### Turtle3D.st() -> None
-#### Turtle3D.showturtle() -> None
-points to turtle.showturtle()
-
-
-#### Turtle3D.isvisible() -> bool
-points to turtle.isvisible()
-
-
-#### Turtle3D.shape()
-points to turtle.shape()
-
-
-#### Turtle3D.pu() -> None
-#### Turtle3D.penup() -> None
-#### Turtle3D.up() -> None
-points to turtle.penup()
-
-
-#### Turtle3D.pd() -> None
-#### Turtle3D.down() -> None
-#### Turtle3D.pendown() -> None
-points to turtle.pendown()
-
-
-#### Turtle3D.width()
-#### Turtle3D.pensize()
-points to turtle.pensize()
-
-
-#### Turtle3D.isdown()
-points to turtle.isdown()
-
-
-#### Turtle3D.onclick()
-points to turtle.onclick()
-
-
-#### Turtle3D.onrelease()
-points to turtle.onrelease()
-
-
-#### Turtle3D.ondrag()
-points to turtle.ondrag()
-
+Since many of these functions point to or expand on the original turtle functions, view
+https://docs.python.org/3/library/turtle.html for more information.
 
 #### Turtle3D.position()
 #### Turtle3D.pos()
@@ -198,14 +138,6 @@ turns the turtle counterclockwise by angle degrees in the XY plane
 #### Turtle3D.seth(XY_angle: float, Z_angle: float = None) -> None
 #### Turtle3D.setheading(XY_angle: float, Z_angle: float = None) -> None
 set the turtle's current heading to be XY_angle in the XY plane, and Z_angle in the XZ plane
-
-
-#### Turtle3D.speed()
-points to turtle.speed()
-
-
-#### Turtle3D.getscreen()
-points to turtle.getscreen()
 
 
 #### Turtle3D.clone()
@@ -248,19 +180,6 @@ turns the turtle counterclockwise in the YZ plane by angle degrees
 
 #### Turtle3D.xdown(angle: float) -> None
 turns the turtle clockwise in the YZ plane by angle degrees
-
-
-#### Turtle3D.pencolor()
-points to turtle.pencolor()
-
-
-#### Turtle3D.color()
-points to turtle.color()
-
-
-#### Turtle3D.fillcolor()
-points to turtle.fillcolor()
-
 
 #### Turtle3D.reset() -> None
 Delete the turtle's drawings from the screen, re-center the turtle and set variables to the default values.
@@ -336,3 +255,86 @@ if redraw is set to False, the redraw phase is skipped. new lines will be drawn 
 but on the next redraw all lines will change to the new perspective. setting this to False is only recommended
 when doing multiple rotations at once, so that the canvas only needs to be redrawn from the final rotation of
 perspective.
+
+
+#### Turtle3D.begin_fill() -> None
+points to turtle.begin_fill()
+
+
+#### Turtle3D.end_fill() -> None
+points to turtle.end_fill()
+
+
+#### Turtle3D.filling() -> bool
+points to turtle.filling()
+
+
+#### Turtle3D.ht() -> None
+#### Turtle3D.hideturtle() -> None
+points to turtle.hideturtle()
+
+
+#### Turtle3D.st() -> None
+#### Turtle3D.showturtle() -> None
+points to turtle.showturtle()
+
+
+#### Turtle3D.isvisible() -> bool
+points to turtle.isvisible()
+
+
+#### Turtle3D.shape()
+points to turtle.shape()
+
+
+#### Turtle3D.pu() -> None
+#### Turtle3D.penup() -> None
+#### Turtle3D.up() -> None
+points to turtle.penup()
+
+
+#### Turtle3D.pd() -> None
+#### Turtle3D.down() -> None
+#### Turtle3D.pendown() -> None
+points to turtle.pendown()
+
+
+#### Turtle3D.width()
+#### Turtle3D.pensize()
+points to turtle.pensize()
+
+
+#### Turtle3D.isdown()
+points to turtle.isdown()
+
+
+#### Turtle3D.onclick()
+points to turtle.onclick()
+
+
+#### Turtle3D.onrelease()
+points to turtle.onrelease()
+
+
+#### Turtle3D.ondrag()
+points to turtle.ondrag()
+
+
+#### Turtle3D.speed()
+points to turtle.speed()
+
+
+#### Turtle3D.getscreen()
+points to turtle.getscreen()
+
+
+#### Turtle3D.pencolor()
+points to turtle.pencolor()
+
+
+#### Turtle3D.color()
+points to turtle.color()
+
+
+#### Turtle3D.fillcolor()
+points to turtle.fillcolor()
