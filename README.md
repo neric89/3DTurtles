@@ -9,7 +9,7 @@ the visual defects, although some of these pose particularly difficult challenge
 # Installation
 
 ```
-pip install turtle3D
+pip install turtles3D
 ```
 
 # Examples
@@ -17,7 +17,7 @@ The following example shows a demonstration of creating a 3D cube, and then anim
 
 ```
 import time
-from turtle3D import Turtle3D
+from turtles3D import Turtle3D
 
 def connect(t: Turtle3D, point1, point2):
     """Helper function to draw a connecting line between 2 points"""
