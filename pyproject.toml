@@ -1,0 +1,30 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turtles3D"
+version = "0.9.1"
+
+description = "A 3D extension built on the turtle library"
+authors = [
+  { name="Eric Nelson" },
+]
+requires-python = ">=3.6"
+dependencies = [
+    "numpy",
+    "typing",
+    "future"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+readme = "README.md"
+keywords = ["turtle", "3D", "drawing"]
+
+[project.urls]
+Homepage = "https://github.com/neric89/3DTurtles"

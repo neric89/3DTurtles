@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+turtles3D.py
+turtles3D.egg-info/PKG-INFO
+turtles3D.egg-info/SOURCES.txt
+turtles3D.egg-info/dependency_links.txt
+turtles3D.egg-info/requires.txt
+turtles3D.egg-info/top_level.txt

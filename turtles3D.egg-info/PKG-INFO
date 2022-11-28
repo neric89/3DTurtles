@@ -1,3 +1,17 @@
+Metadata-Version: 2.1
+Name: turtles3D
+Version: 0.9.1
+Summary: A 3D extension built on the turtle library
+Author: Eric Nelson
+Project-URL: Homepage, https://github.com/neric89/3DTurtles
+Keywords: turtle,3D,drawing
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # Turtle3D
 Turtle 3D is designed to be a 3D extension of the python turtle module. It is very limited as far as 3D renderers go, but can be useful for simple 3D modeling.
 

@@ -497,6 +497,7 @@ class Turtle3D:
         self.speed = self.__t.speed
 
         self.getscreen = self.__t.getscreen
+        self.update = turtle.update
 
     def clone(self) -> Turtle3D:
         t = Turtle3D()
@@ -860,7 +861,6 @@ if __name__ == "__main__":
             t.rotateY(angle, False)
             t.rotateZ(angle)
 
-
     def draw_axes(t: Turtle3D):
         t.pencolor("blue")
         t.goto(500, 0, 0)
@@ -881,7 +881,6 @@ if __name__ == "__main__":
         t.write("-Z")
         t.home()
         t.pencolor("black")
-        turtle.update()
 
     def draw_sphere(t: Turtle3D) -> None:
         t.pensize(5)
@@ -917,7 +916,7 @@ if __name__ == "__main__":
     t = Turtle3D()
     s = Screen()
     t.speed(0)
-    
+
     h = t.heading()
 
     t.home()
