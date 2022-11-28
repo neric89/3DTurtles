@@ -2,12 +2,15 @@
 Turtle 3D is designed to be a 3D extension of the python turtle module. It is very limited as far as 3D renderers go, but can be useful for simple 3D modeling.
 
 Effort was made to make this feel as much like the original turtle module as possible, and many functions simply point to the original turtle module. However, due
-to the nature of the approach used and the difficulty of expanding some features to the third dimension, some of the original functions do not exist, and some occasional 
+to the nature of the approach used and the difficulty of expanding some features to the third dimension, some of the original functions do not exist, and some occasional
 visual defects do occur. Plans are to continue expanding this module to include more of the functionality the was present in the original turtle module, and hopefully remove
 the visual defects, although some of these pose particularly difficult challenges. Suggestions or solutions are welcome.
 
-*NOTE:* The documentation for this is not yet finished
+# Installation
 
+```
+pip install turtle3D
+```
 
 # Examples
 The following example shows a demonstration of creating a 3D cube, and then animating its rotation by calling the rotation functions repeatedly.
@@ -52,7 +55,6 @@ def draw_axes(t: Turtle3D):
     t.write("-Z")
     t.home()
     t.pencolor("black")
-    turtle.update()
 
 def run(t: Turtle3D):
     """Main function to handle our drawing and animation"""
@@ -69,8 +71,8 @@ def run(t: Turtle3D):
         [-50, -50, 50],  # bottom-left-back
     ]
 
-    # connecting each of the points to the other points it needs to 
-    for i in range(4): 
+    # connecting each of the points to the other points it needs to
+    for i in range(4):
         connect(t, points[i], points[(i + 1) % 4])
         connect(t, points[i + 4], points[((i + 1) % 4) + 4])
         connect(t, points[i], points[i + 4])
@@ -97,7 +99,7 @@ if __name__ == "__main__":
     s.exitonclick()
 
 ```
-# Documentation
+# API Reference
 
 #### Turtle3D.begin_fill() -> None
 points to turtle.begin_fill()
@@ -146,7 +148,7 @@ points to turtle.pendown()
 points to turtle.pensize()
 
 
-#### Turtle3D.isdown() 
+#### Turtle3D.isdown()
 points to turtle.isdown()
 
 
@@ -312,8 +314,8 @@ moves the turtle to (0, 0, 0)
 #### Turtle3D.rotateZ(angle: float, redraw=True) -> None
 rotate the XY plane angle degrees about the Z axis and redraws the canvas from the new canvas perspective.
 
-if redraw is set to False, the redraw phase is skipped. new lines will be drawn from the new perspective, 
-but on the next redraw all lines will change to the new perspective. setting this to False is only recommended 
+if redraw is set to False, the redraw phase is skipped. new lines will be drawn from the new perspective,
+but on the next redraw all lines will change to the new perspective. setting this to False is only recommended
 when doing multiple rotations at once, so that the canvas only needs to be redrawn from the final rotation of
 perspective.
 
@@ -321,8 +323,8 @@ perspective.
 #### Turtle3D.rotateX(angle: float, redraw=True) -> None
 rotate the YZ plane angle degrees about the X axis and redraws the canvas from the new canvas perspective.
 
-if redraw is set to False, the redraw phase is skipped. new lines will be drawn from the new perspective, 
-but on the next redraw all lines will change to the new perspective. setting this to False is only recommended 
+if redraw is set to False, the redraw phase is skipped. new lines will be drawn from the new perspective,
+but on the next redraw all lines will change to the new perspective. setting this to False is only recommended
 when doing multiple rotations at once, so that the canvas only needs to be redrawn from the final rotation of
 perspective.
 
@@ -330,7 +332,7 @@ perspective.
 #### Turtle3D.rotateY(angle: float, redraw=True) -> None
 rotate the XZ plane angle degrees about the Y axis and redraws the canvas from the new canvas perspective.
 
-if redraw is set to False, the redraw phase is skipped. new lines will be drawn from the new perspective, 
-but on the next redraw all lines will change to the new perspective. setting this to False is only recommended 
+if redraw is set to False, the redraw phase is skipped. new lines will be drawn from the new perspective,
+but on the next redraw all lines will change to the new perspective. setting this to False is only recommended
 when doing multiple rotations at once, so that the canvas only needs to be redrawn from the final rotation of
 perspective.
