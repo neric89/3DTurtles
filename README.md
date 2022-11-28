@@ -195,7 +195,7 @@ turns the turtle counterclockwise by angle degrees in the XY plane
 
 #### Turtle3D.seth(XY_angle: float, Z_angle: float = None) -> None
 #### Turtle3D.setheading(XY_angle: float, Z_angle: float = None) -> None
-set the turtle's current heading to be __ in the XY plane, and __ in the XZ plane
+set the turtle's current heading to be XY_angle in the XY plane, and Z_angle in the XZ plane
 
 
 #### Turtle3D.speed()
@@ -211,7 +211,7 @@ returns a copy of the turtle with the same heading, position, pensize, fillcolor
 
 
 #### Turtle3D.heading()
-returns the turtle's current heading, __ in the XY plane, and __ in the XZ plane
+returns the turtle's current heading, XY_angle in the XY plane, and Z_angle in the XZ plane
 
 
 #### Turtle3D.stamp()
